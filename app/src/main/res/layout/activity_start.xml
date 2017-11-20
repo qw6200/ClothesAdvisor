@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc214.project3.StartActivity">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="45sp"
+        style="@style/TextView1"
+        android:text="@string/welcome_to_clothesadvisor222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:gravity="center_horizontal"
+        android:textSize="27sp"
+        android:hint="@string/please_enter_your_zip_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="96dp"
+        android:id="@+id/ET_start_zip" />
+
+    <Button
+        android:textSize="17sp"
+        android:text="@string/submit111"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ET_start_zip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:id="@+id/Butt_start_submit" />
+</RelativeLayout>

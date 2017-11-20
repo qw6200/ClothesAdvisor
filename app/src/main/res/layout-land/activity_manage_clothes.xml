@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_clothes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc214.project3.ManageClothes">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        android:text="@string/manage_your_clothes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/Butt_manageClothes_seeClothes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/view7" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="15dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Butt_manageClothes_addClothes"
+        android:text="@string/add_clothes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:gravity="center"
+        android:hint="@string/enter_the_id_of_the_clothing_you_would_like_to_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/ET_manageClothes_delete"
+        android:layout_below="@+id/view7"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Butt_manageClothes_deleteClothing"
+        android:text="@string/delete_clothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Butt_manageClothes_seeClothes"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/Butt_manageClothes_seeClothes"
+        android:text="@string/see_your_clothes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Butt_manageClothes_addClothes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

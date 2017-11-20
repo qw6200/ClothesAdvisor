@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_clothes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="csc214.project3.AddClothes">
+
+    <TextView
+        style="@style/TextView1"
+        android:textSize="20sp"
+        android:text="@string/type_of_clothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_hoodie"
+        android:text="@string/hoodie"
+        style="@style/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_Tshirt"
+        android:layout_alignBottom="@+id/Butt_addClothes_Tshirt"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        style="@style/Button1"
+        android:text="@string/t_shirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Butt_addClothes_Tshirt"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_coat"
+        android:text="@string/parka"
+        style="@style/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_jacket"
+        android:layout_alignBottom="@+id/Butt_addClothes_jacket"
+        android:layout_toStartOf="@+id/Butt_addClothes_longSleeves" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_jacket"
+        android:text="@string/jacket"
+        style="@style/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/Butt_addClothes_Tshirt"
+        android:layout_toStartOf="@+id/Butt_addClothes_hoodie" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_shorts"
+        android:text="@string/shorts"
+        android:layout_width="wrap_content"
+        style="@style/Button1"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_coat"
+        android:layout_alignBottom="@+id/Butt_addClothes_coat"
+        android:layout_toEndOf="@+id/Butt_addClothes_coat"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:textSize="20sp"
+        style="@style/EditText1"
+        android:hint="@string/enter_the_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Butt_addClothes_longPants"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ET_addClothes_brand" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:id="@+id/view5" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:text="@string/add_your_piece_of_clothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view3"
+        android:layout_alignTop="@+id/ET_addClothes_brand"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/Butt_addClothes_brandSubmit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/view4" />
+
+    <Button
+        android:textSize="10sp"
+        android:text="@string/submit"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:id="@+id/Butt_addClothes_brandSubmit"
+        android:layout_below="@+id/view3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_grey"
+        android:text="@string/gray"
+        android:textColor="#585252"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_yellow"
+        style="@style/Button1"
+        android:layout_alignBottom="@+id/Butt_addClothes_yellow"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:textColor="#0123ff"
+        android:id="@+id/Butt_addClothes_blue"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/Butt_addClothes_Tshirt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="11dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/Butt_addClothes_orange"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_longPants"
+        android:text="@string/long_pants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:layout_below="@+id/Butt_addClothes_coat"
+        android:layout_alignStart="@+id/Butt_addClothes_yellow"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_jeans"
+        android:text="@string/jeans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:layout_above="@+id/ET_addClothes_brand"
+        android:layout_toEndOf="@+id/Butt_addClothes_red" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_longSleeves"
+        style="@style/Button1"
+        android:text="@string/long_sleeve_shirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_hoodie"
+        android:layout_alignBottom="@+id/Butt_addClothes_hoodie"
+        android:layout_alignEnd="@+id/view5" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_red"
+        android:text="@string/red"
+        style="@style/Button1"
+        android:layout_width="wrap_content"
+        android:textColor="#ff0400"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_blue"
+        android:layout_alignBottom="@+id/Butt_addClothes_blue"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_yellow"
+        android:text="@string/yellow"
+        android:layout_width="wrap_content"
+        android:textColor="#fff700"
+        style="@style/Button1"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toStartOf="@+id/Butt_addClothes_grey" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_brown"
+        android:text="@string/brown"
+        android:textColor="#84383c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:layout_below="@+id/Butt_addClothes_red"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:text="@string/orange"
+        style="@style/Button1"
+        android:id="@+id/Butt_addClothes_orange"
+        android:layout_width="wrap_content"
+        android:textColor="#ff9100"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Butt_addClothes_brown"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_black"
+        android:text="@string/black"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:layout_alignBaseline="@+id/Butt_addClothes_brown"
+        android:layout_alignBottom="@+id/Butt_addClothes_brown"
+        android:layout_alignStart="@+id/Butt_addClothes_blue" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_purple"
+        android:text="@string/purple"
+        android:layout_width="wrap_content"
+        style="@style/Button1"
+        android:textColor="#8802c2"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignStart="@+id/Butt_addClothes_black" />
+
+    <Button
+        android:text="@string/green"
+        android:id="@+id/Butt_addClothes_green"
+        style="@style/Button1"
+        android:textColor="#08c505"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_black"
+        android:layout_alignBottom="@+id/Butt_addClothes_black"
+        android:layout_alignStart="@+id/Butt_addClothes_yellow" />
+
+    <Button
+        android:text="@string/white"
+        android:id="@+id/Butt_addClothes_white"
+        android:layout_width="wrap_content"
+        style="@style/Button1"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_alignStart="@+id/Butt_addClothes_green" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_pink"
+        android:text="@string/pink"
+        android:layout_width="wrap_content"
+        android:textColor="#e80190"
+        style="@style/Button1"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Butt_addClothes_green"
+        android:layout_alignBottom="@+id/Butt_addClothes_green"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/color_of_clothing"
+        style="@style/TextView1"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/view4"
+        android:layout_toEndOf="@+id/Butt_addClothes_jacket" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_other"
+        android:text="@string/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Button1"
+        android:layout_above="@+id/view2"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/Butt_addClothes_done"
+        android:text="@string/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Butt_addClothes_purple"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
